@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charaset="utf8">
+    <title>Sing Up</title>
+</head>
+<body>
+    <h1>Sign up</h1>
+    <form method="POST">
+        <p>Name: <input type="text" name="name" value="<%= userValues.name %>"><%= errorMsgs.name %></p>
+        <p>Email: <input type="text" name="email" value="<%= userValues.email %>"><%= errorMsgs.email %></p>
+        <p>Password: <input type="password" name="password" value="<%= userValues.password %>"><%= errorMsgs.password %></p>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <p><a href="/login">Login Page</a></p>
+    
+</body>
+</html>
